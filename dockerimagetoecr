@@ -1,0 +1,15 @@
+  250  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  251  unzip awscliv2.zip
+  252  sudo ./aws/install
+  253  apt install unzip
+  254  unzip awscliv2.zip
+  255  sudo ./aws/install
+  256  aws --version
+  257  /usr/local/bin/aws --version
+  258  /usr/local/bin/aws configure
+  259  aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/r2w5i8c2
+  260  /usr/local/bin/aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/r2w5i8c2
+  261  docker images
+  262  docker tag 7a9f9e95542b public.ecr.aws/r2w5i8c2/gopaltest:latest
+  263  docker push public.ecr.aws/r2w5i8c2/gopaltest:latest
+  264  history
